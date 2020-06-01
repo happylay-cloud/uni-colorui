@@ -1,8 +1,10 @@
 ####  在线字体备份
-* color_ui_font.eot 对应 [at.alicdn.com/t/font_533566_yfq2d9wdij.eot?t=1545239985831](at.alicdn.com/t/font_533566_yfq2d9wdij.eot?t=1545239985831) 
-* color_ui_font.ttf 对应 [at.alicdn.com/t/font_533566_yfq2d9wdij.ttf?t=1545239985831](at.alicdn.com/t/font_533566_yfq2d9wdij.ttf?t=1545239985831)
-* color_ui_font.svg 对应 [at.alicdn.com/t/font_533566_yfq2d9wdij.svg?t=1545239985831](at.alicdn.com/t/font_533566_yfq2d9wdij.svg?t=1545239985831)
+* color_ui_font.eot   对应   [http://at.alicdn.com/t/font_533566_yfq2d9wdij.eot?t=1545239985831](http://at.alicdn.com/t/font_533566_yfq2d9wdij.eot?t=1545239985831) 
+* color_ui_font.ttf     对应   [http://at.alicdn.com/t/font_533566_yfq2d9wdij.ttf?t=1545239985831](http://at.alicdn.com/t/font_533566_yfq2d9wdij.ttf?t=1545239985831)
+* color_ui_font.svg   对应   [http://at.alicdn.com/t/font_533566_yfq2d9wdij.svg?t=1545239985831](http://at.alicdn.com/t/font_533566_yfq2d9wdij.svg?t=1545239985831)
+
 #### 在线引用地址
+
 ```
 @font-face {
 	font-family: "cuIcon";
