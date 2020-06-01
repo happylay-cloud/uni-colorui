@@ -1,12 +1,18 @@
 # uni-colorui
 
-#### 1.[安装](https://www.color-ui.com/)
+### 鲜亮的高饱和色彩，专注视觉的小程序组件库 https://www.color-ui.com/
+
+#### 1.[完整安装包下载](https://www.color-ui.com/)
+
+#### 2.npm使用（[uni-app](https://uniapp.dcloud.io/collocation/App)）
+
+```mermaid
+graph LR
+A(npm i -S uni-colorui) -->B(uni-app)
+B --> C(App.vue)
+C --> D(引入全局样式)
 
 ```
-npm i -S uni-colorui
-```
-
-#### 2.使用 uni-app -> App.vue -> 引入全局样式
 
 ```
 <style>
