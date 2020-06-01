@@ -21,11 +21,11 @@ C --> D(引入全局样式)
 </style>
 ```
 
-#### 3.[github仓库](https://github.com/weilanwl/ColorUI)
+#### 3.[仓库地址](https://github.com/weilanwl/ColorUI)
 
-#### 4.[MIT开源协议](https://raw.githubusercontent.com/weilanwl/ColorUI/master/LICENSE)
+#### 4.[开源协议](https://raw.githubusercontent.com/weilanwl/ColorUI/master/LICENSE)
 
-#### 5.注意事项
+#### 5.[注意事项](https://raw.githubusercontent.com/weilanwl/ColorUI/master/Colorui-UniApp/colorui/main.css)
 
 ```
 使用ColorUi开发扩展与插件时，请注明基于ColorUi开发 
