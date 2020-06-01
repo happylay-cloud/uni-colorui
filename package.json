@@ -1,0 +1,23 @@
+{
+  "name": "uni-colorui",
+  "version": "2.1.6",
+  "description": "鲜亮的高饱和色彩，专注视觉的小程序组件库 https://www.color-ui.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weilanwl/ColorUI.git"
+  },
+  "keywords": [
+    "colorui",
+    "uni-app"
+  ],
+  "author": "文晓港",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weilanwl/ColorUI/issues"
+  },
+  "homepage": "https://github.com/weilanwl/ColorUI#readme"
+}
