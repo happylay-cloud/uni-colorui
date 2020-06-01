@@ -18,6 +18,7 @@ C --> D(引入全局样式)
 <style>
 @import "uni-colorui/theme/main.css";
 @import "uni-colorui/theme/icon.css";
+@import "uni-colorui/theme/animation.css";
 </style>
 ```
 
