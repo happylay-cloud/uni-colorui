@@ -1,26 +1,57 @@
 # uni-colorui
 
-### [鲜亮的高饱和色彩，专注视觉的小程序组件库2.x版本](https://www.color-ui.com/) 
+### 鲜亮的高饱和色彩，专注视觉的小程序组件库[2.x版本](https://www.color-ui.com/) ，适用于[uni-app](https://uniapp.dcloud.io/collocation/App) 。
 
 #### 1.[完整安装包下载](https://www.color-ui.com/)
 
-#### 2.npm使用（[uni-app](https://uniapp.dcloud.io/collocation/App)）
+#### 2.[通过npm安装](https://www.npmjs.com/package/uni-colorui)
 
-```mermaid
-graph LR
-A(npm i -S uni-colorui) -->B(uni-app)
-B --> C(App.vue)
-C --> D(引入全局样式)
+`不同版本安装步骤`
 
-```
+**1).旧版本**
+* **注意：uni-colorui@2.1.6版本引用方式（在线字体）**
 
 ```
 npm install -S uni-colorui@2.1.6
 ```
-* _*注意：uni-colorui@2.1.6版本引用方式（在线字体）*_
-
-`App.vue`
+`main.js`
+```javascript
+import cuCustom from 'uni-colorui/theme/components/cu-custom.vue'
+// 自定义导航栏
+Vue.component('cu-custom', cuCustom)
 ```
+`App.vue`
+```vue
+<script>
+	import Vue from 'vue'
+	export default {
+		onLaunch: function() {
+			// 设置自定义导航
+		    uni.getSystemInfo({
+		        success: function(e) {
+		            // #ifndef MP
+		            Vue.prototype.StatusBar = e.statusBarHeight;
+		            if (e.platform == 'android') {
+		                Vue.prototype.CustomBar = e.statusBarHeight + 50;
+		            } else {
+		                Vue.prototype.CustomBar = e.statusBarHeight + 45;
+		            };
+		            // #endif
+		            // #ifdef MP-WEIXIN
+		            Vue.prototype.StatusBar = e.statusBarHeight;
+		            let custom = wx.getMenuButtonBoundingClientRect();
+		            Vue.prototype.Custom = custom;
+		            Vue.prototype.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+		            // #endif        
+		            // #ifdef MP-ALIPAY
+		            Vue.prototype.StatusBar = e.statusBarHeight;
+		            Vue.prototype.CustomBar = e.statusBarHeight + e.titleBarHeight;
+		            // #endif
+		        }
+		    })
+		},
+	}
+</script>
 <style>
 	/*每个页面公共css */
 	@import "uni-colorui/theme/main.css";
@@ -28,16 +59,23 @@ npm install -S uni-colorui@2.1.6
 	@import "uni-colorui/theme/animation.css";
 </style>
 ```
-`main.js`
+
+`pages.json`
+```json
+{
+	"globalStyle": {
+		"navigationStyle": "custom", // 使用自定义导航栏
+	}
+}
+
 ```
-import cuCustom from 'uni-colorui/theme/components/cu-custom.vue'
-// 自定义导航栏
-Vue.component('cu-custom', cuCustom)
+**2).新版本**
+* **注意：uni-colorui大于2.1.6版本引用方式（离线字体）**
+
 ```
-* _*注意：uni-colorui大于2.1.6版本引用方式（离线字体）*_
+npm install -S uni-colorui
 ```
-npm install -S uni-colorui@2.1.6
-```
+
 `main.js`
 ```
 import "uni-colorui/lib/main.css";
@@ -48,7 +86,48 @@ import cuCustom from 'uni-colorui/lib/components/cu-custom.vue'
 // 自定义导航栏
 Vue.component('cu-custom', cuCustom)
 ```
+`App.vue`
+```vue
+<script>
+	import Vue from 'vue'
+	export default {
+		onLaunch: function() {
+			// 设置自定义导航
+		    uni.getSystemInfo({
+		        success: function(e) {
+		            // #ifndef MP
+		            Vue.prototype.StatusBar = e.statusBarHeight;
+		            if (e.platform == 'android') {
+		                Vue.prototype.CustomBar = e.statusBarHeight + 50;
+		            } else {
+		                Vue.prototype.CustomBar = e.statusBarHeight + 45;
+		            };
+		            // #endif
+		            // #ifdef MP-WEIXIN
+		            Vue.prototype.StatusBar = e.statusBarHeight;
+		            let custom = wx.getMenuButtonBoundingClientRect();
+		            Vue.prototype.Custom = custom;
+		            Vue.prototype.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+		            // #endif        
+		            // #ifdef MP-ALIPAY
+		            Vue.prototype.StatusBar = e.statusBarHeight;
+		            Vue.prototype.CustomBar = e.statusBarHeight + e.titleBarHeight;
+		            // #endif
+		        }
+		    })
+		},
+	}
+</script>
+```
+`pages.json`
+```json
+{
+	"globalStyle": {
+		"navigationStyle": "custom", // 使用自定义导航栏
+	}
+}
 
+```
 #### 3.[仓库地址](https://github.com/weilanwl/ColorUI)
 
 #### 4.[开源协议](https://raw.githubusercontent.com/weilanwl/ColorUI/master/LICENSE)
