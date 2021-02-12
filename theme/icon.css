@@ -37,9 +37,9 @@
 	/* IE6-IE8 */
 	url('fonts/color_ui_font.woff') format('woff'),
 	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-	url('fonts/color_ui_font.ttf?t=1545239985831') format('truetype'),
+	url('fonts/color_ui_font.ttf') format('truetype'),
 	/* iOS 4.1- */
-	url('fonts/color_ui_font.svg?t=1545239985831#cuIconfont') format('svg');
+	url('fonts/color_ui_font.svg#cuIconfont') format('svg');
 
 }
 

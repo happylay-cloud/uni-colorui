@@ -73,7 +73,7 @@ Vue.component('cu-custom', cuCustom)
 * **注意：uni-colorui大于2.1.6版本引用方式（离线字体）**
 
 ```
-npm install -S uni-colorui
+npm install -S uni-colorui@2.1.7
 ```
 
 `main.js`

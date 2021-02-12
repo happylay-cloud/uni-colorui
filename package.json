@@ -1,6 +1,6 @@
 {
   "name": "uni-colorui",
-  "version": "2.1.6.1",
+  "version": "2.1.7",
   "description": "鲜亮的高饱和色彩，专注视觉的小程序组件库 https://www.color-ui.com/",
   "main": "lib/index.css",
   "style": "lib/index.css",
