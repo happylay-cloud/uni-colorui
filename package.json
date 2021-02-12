@@ -2,9 +2,10 @@
   "name": "uni-colorui",
   "version": "2.1.6",
   "description": "鲜亮的高饱和色彩，专注视觉的小程序组件库 https://www.color-ui.com/",
-  "main": "index.js",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/weilanwl/ColorUI/issues"
   },
-  "homepage": "https://github.com/weilanwl/ColorUI#readme"
+  "homepage": "https://github.com/weilanwl/ColorUI#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.1.0"
+  }
 }

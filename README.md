@@ -14,12 +14,15 @@ C --> D(引入全局样式)
 
 ```
 
+`main.js`
 ```
-<style>
-@import "uni-colorui/theme/main.css";
-@import "uni-colorui/theme/icon.css";
-@import "uni-colorui/theme/animation.css";
-</style>
+import "uni-colorui/lib/main.css";
+import "uni-colorui/lib/icon.css";
+import "uni-colorui/lib/animation.css";
+
+import cuCustom from 'uni-colorui/lib/components/cu-custom.vue'
+// 自定义导航栏
+Vue.component('cu-custom', cuCustom)
 ```
 
 #### 3.[仓库地址](https://github.com/weilanwl/ColorUI)
