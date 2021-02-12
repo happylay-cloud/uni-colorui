@@ -35,7 +35,7 @@
 	/* IE6-IE8 */
 	src: url('fonts/color_ui_font.eot#iefix') format('embedded-opentype'),
 	/* IE6-IE8 */
-	url('fonts/color_ui_font.woff'),
+	url('fonts/color_ui_font.woff') format('woff'),
 	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 	url('fonts/color_ui_font.ttf?t=1545239985831') format('truetype'),
 	/* iOS 4.1- */
